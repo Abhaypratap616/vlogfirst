@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG SITE</title>
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Poppins&family=Roboto+Slab:wght@200&display=swap');
+    *{
+        margin: 0%;
+        padding: 0%;
+        text-decoration: none;
+        color: black;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+    }
+/* ===================================NAVBAAR START===============================================================*/
+    .home ul {
+        display: flex;
+        margin-top: 5px;
+       
+    }
+    .home ul li{
+        display: flex;
+        padding: 15px 15px;
+        
+    }
+    .home ul li:hover{
+        color: rgb(124, 5, 236);
+    }
+    .cont ul {
+        display: flex;
+        margin-right: 40px;
+        margin-top: 13px;
+       
+    }
+    .cont ul li{
+        display: flex;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+    .cont ul li:hover{
+        background-color: rgb(253, 253, 253);
+    }
+    .baar{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .baar img{
+        width: 20px;
+        height: 20px;
+        margin-top: -47px;
+        margin-right: 14px;
+        display: none;
+    }
+    .navbaar {
+        display: flex;
+        justify-content: space-between;
+        max-height: 8vh;
+        overflow: hidden;
+    }
+    .blooger{
+        padding: 15px 15px;
+        margin-left: 25px;
+        font-size: 25px;
+    }
+    .blooger:hover{
+        color: rgb(121, 9, 225);
+    }
+    .cont img{
+        width: 10px;
+        height: 10px;
+    }
+    .mainnavbaar{
+        background-color: rgb(234, 234, 234);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    }
+    
+    
+@media screen and (max-width: 750px) {
+   .mainnavbaar{
+    background-color: rgb(8, 8, 8);
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+}
+@media screen and (max-width: 750px) {
+   .navbaar{
+   display: flex;
+   flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+   .home ul{
+   display: flex;
+   flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+   .baar img {
+display: initial;
+  }
+}
+@media screen and (max-width: 750px) {
+   .blooger {
+margin-left: 10px;
+margin-top: 5px;
+font-size: 18px;
+color: aliceblue;
+  }
+}
+
+/* ===========================================NAVBAAR END======================================================== */
+ .text{
+    display: flex;
+   flex-direction: column;
+  
+  align-items: center;
+ 
+  
+}
+.abh{
+    background-image: url(/Background-image.png);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text h3{
+    margin-top: 20vh;
+    color: aliceblue;
+    font-weight: 1000;
+    font-size: 25px;
+}
+.text h1{
+    padding: 5vh;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 30px;
+}
+.buttonab{
+    margin-top: 2vh;
+    width: 8vw;
+    height: 6vh;
+    border-radius: 25px;
+    border: 1px solid;
+   background-color: rgb(10, 223, 131);
+}
+.buttonab:hover{
+    background: transparent;
+    color: aliceblue;
+    border-color: rgb(11, 179, 81);
+}
+@media screen and (max-width: 750px) {
+   .text h1 {
+font-size: 20px;
+;
+  }
+}
+@media screen and (max-width: 750px) {
+   .buttonab {
+width: 120px;
+  }
+}
+@media screen and (max-width: 750px) {
+   .text h3 {
+font-size: 20px;
+
+  }
+}
+.abhay{
+    background-image: url(/Abract01.png);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+
+    height: 85vh;
+    width: 100%;
+    
+}
+.blogimg{
+   
+    display: flex;
+    height: 45vh;
+border: none;
+    /* margin: 5px;
+    padding:  */
+    width: 20vw;
+    box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+   ;
+   
+}
+.img1 img{
+    width:20vw ;
+    height: 23vh;
+    justify-content: center;
+   
+}
+.img1 img:hover{
+    transform: scale(.93);
+     cursor: pointer;
+    
+}
+.imgtext1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+   text-align: center;
+}
+.b1 {
+    display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 2vh;
+
+}
+.min{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+}
+.b1 button{
+    border-radius: 15px;
+    border: none;
+    width: 7vw;
+    height: 5vh;
+    background-color:rgb(116, 130, 201);
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;
+    cursor: pointer;
+    border: 1px solid blueviolet;
+}
+.b1 button:hover{
+    background-color: transparent;
+    color:black
+}
+.abhay{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 15vh;
+}
+@media screen and (max-width: 750px) {
+   .abhay {
+flex-direction: column;
+;
+margin-top: 45vh;
+  }
+}
+@media screen and (max-width: 750px) {
+   .img1 img {
+width: 35vh;
+
+  }
+}
+@media screen and (max-width: 750px) {
+   .blogimg {
+width: 34vh;
+margin: auto;
+padding: 20px;
+
+  }
+}
+@media screen and (max-width: 750px) {
+   .blogimg {
+width: 34vh;
+margin: auto;
+padding: 17px;
+
+  }
+}
+@media screen and (max-width: 750px) {
+   .b1 button {
+width: 17vw;
+height: 4vh;
+
+  }
+}
+.imgbigsec{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    
+}
+.sof{
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+    margin-left: 14vw;
+}
+.down1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.soft{
+    padding: 8px;
+    border: 1px solid rgb(125, 109, 215);
+    width: 20vw;
+   background-color:#cce0ff;
+    margin: 10px;
+    border-radius:  20px;
+    text-align: center;
+    cursor: pointer;
+   margin-top: px;
+}
+.bigimg img{
+    margin: auto;
+    margin-left: 2.5vw;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: none;
+    cursor: pointer;
+   
+}
+.bigimg img:hover{
+    transform: scale(1.02);
+   
+}
+
+.datesec{
+    display: flex;
+    width: 22vw;
+    height: 40px;
+   justify-content:center ;
+    border: 1px solid red;
+    margin-left: 14vw;
+    border-radius: 20px;
+    background-color: rgb(161, 99, 218);
+    margin-top: 0vh;
+   align-items: center;
+   overflow: hidden;
+   
+   
+}
+.bigimg img{
+    width: 50vw;
+    height: 55vh;
+   
+}
+@media screen and (max-width: 750px) {
+   .imgbigsec {
+display: flex;
+flex-direction: column;
+
+  }
+}
+@media screen and (max-width: 750px) {
+    .bigimg img {
+margin-top: 49vh;
+width: 95vw;
+height: 40vh;
+margin-left: 
+    }
+}
+@media screen and (max-width: 750px) {
+   .soft {
+       width: 50vw;
+       height: 2vh;
+      text-align: center;
+      padding: 10px;
+      margin-left: 2vw;
+      
+     
+  }
+}
+@media screen and (max-width: 750px) {
+   .sof {
+      display: flex;
+      flex-direction: column;
+      margin-top: 150vh;
+      width: 90vw;
+      margin-left:-30vw;
+      
+  }
+}
+@media screen and (max-width: 750px) {
+   .bigimg img:hover {
+    transform: scale(1.06);
+  }
+}
+.b h1{
+    margin-bottom: 3vh;
+    margin-left: 1vw;
+    font-weight: 1000;
+    font-size: 40px;
+}
+@media screen and (max-width: 750px) {
+   .b h1 {
+   text-align: center;
+   font-size: 25px;
+   font-weight:900;
+  }
+}
+.imgsex img{
+width: 25vw;margin-top: 5vh;
+cursor: pointer;
+border-radius: 10px;
+box-shadow:  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+.imgsex img:hover{
+    transform: scale(1.02);
+}
+.bb{
+    width: 25vw;
+    margin-top: 5px;
+}
+.textsection h1{
+   margin-top: 5px;
+}
+.dateset{
+    width: 40vw;
+  margin-top: -38vh;
+  margin-left: 3vw;
+ 
+  
+  
+}
+.admin{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 25vw;
+    justify-content: center;
+    border-radius: 15px;
+   margin-left:13vw;
+   height: 25px;
+   background-color:#cce0ff;
+   margin-top: 2vh;
+  
+   
+   
+}
+.admin img{
+    width: 20px;
+    height: 20px;
+}
+.m1{
+   
+}
+.m1 {
+margin-left: 3vw;
+margin-top: 4vh;
+}
+.ad{
+    width: 15vw;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 5.5vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    background-color:#cce0ff;
+    margin-top: 10px;
+}
+.ad img{
+    width: 10px ;
+    height: 10px;
+}
+.m1 button{
+    width: 8vw;
+    height: 4vh;
+    background-color:#cce0ff;
+    border: 1px solid blueviolet;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 3.5vh;
+   
+}
+.m1 button:hover{
+    background: transparent;
+}
+
+@media screen and (max-width: 1440px) {
+   .dateset {
+  margin-top: -30vh;
+  }
+}
+@media screen and (max-width: 1260px) {
+   .inputa button {
+font-size: 10px;
+  }
+}
+@media screen and (max-width: 1440px) {
+   .m1 button {
+ width: 15vw;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+   .admin {
+      width: 20vw;
+      height: 3vh;
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+      margin-left: 17vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+   .admin img {
+  width: 7px;
+  height: 7px;
+  }
+}
+@media screen and (max-width: 750px) {
+   .ad {
+      width: 25vw;
+      height: 3vh;
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+      justify-content: center;
+  }
+}
+@media screen and (max-width: 750px) {
+   .m1 {
+    width: 90vw;
+    margin-left: 7vw;
+  }
+}
+@media screen and (max-width: 750px) {
+   .m1 button {
+    width: 30vw;
+    margin-left: 28vw;
+  }
+}
+@media screen and (max-width: 750px) {
+   .admin {
+    width: 55vw;
+   display: flex;
+  margin-left: 23vw;
+   
+   
+  }
+}
+@media screen and (max-width: 750px) {
+   .b h1 {
+    margin-right: 23vw;
+    
+  }
+}
+/* @media screen and (max-width: 750px) {
+   .textsection {
+    display: none;
+  }
+} */
+@media screen and (max-width: 750px) {
+   .h1 {
+ margin-left:  -12vw;
+
+ 
+  }
+}
+.soft:hover{
+background: transparent;
+}
+@media screen and (max-width: 750px) {
+   .imgsex img {
+  width: 90vw;
+  margin-left: -14.5vw;
+    
+  }
+}
+@media screen and (max-width: 750px) {
+   .ad {
+  
+    
+  }
+}
+@media screen and (max-width: 750px) {
+   .bb  {
+ margin-left: -8vw;
+    width: 80vw;
+    padding:auto;
+  }
+}
+.inputa input{
+    margin-top: 10px;
+    width: 25vw;
+    text-align: center;
+    height: 4vh;
+    border: .1px solid;
+}
+.inputa button{
+    width: 7vw;
+    height: 4vh;
+    border-radius: 15px;
+    border: 1px solid blueviolet;
+    background-color:#cce0ff;
+    cursor: pointer;
+}
+.inputa button:hover{
+    background: transparent;
+}
+@media screen and (max-width: 750px) {
+   .inputa input  {
+width: 80vw;
+margin-left: -9vw;
+
+  }
+}
+@media screen and (max-width: 750px) {
+   .inputa {
+display: flex;
+flex-direction: column;
+font-size: 15px
+  }
+}
+@media screen and (max-width: 750px) {
+   .inputa button {
+width: 20vw;
+margin-top: 10px;
+margin-left: 20vw;
+font-size: 10px
+  }
+}
+.down2{
+  margin-top: 5vh;
+  display: flex; 
+  height: 100vh;
+    width: 100%;
+
+}
+
+ 
+
+.textsection2 {
+  width: 40vw;
+  margin-left: 14vw;
+  margin-top: 0vh;
+  
+}
+.textsection3 {
+  width: 40vw;
+  margin-left: 14vw;
+  margin-top: 0vh
+}
+.imgsex3 img{
+  border-radius: 15px;
+  width: 25vw;
+}
+@media screen and (max-width: 750px) {
+   .imgbigsec2 {
+margin-top: 100vh
+  }
+}
+.imgbigsec2{
+  width: 50vw;
+}
+.down3{
+  display: flex;
+  height: 100vh;
+    width: 100%;
+}
+.imgbigsec3{
+  width: 50vw;
+  margin-top: 5vh;
+}
+.imgsex3 img{
+  margin-top: 15vh;
+}
+@media screen and (max-width: 750px) {
+   .down3 {
+    margin-top: 100vh
+  }
+}
+
+@media screen and (max-width: 750px) {
+   .down2 {
+    margin-top: 200vh
+  }
+}
+@media screen and (max-width: 750px) {
+   .textsection {
+    margin-top: 5vh
+  }
+}
+@media screen and (max-width: 750px) {
+   .sof {
+    margin-top: 395vh
+  }
+}
+@media screen and (max-width: 750px) {
+   .imgbigsec2 {
+    margin-top: -200vh
+  }
+}
+@media screen and (max-width: 750px) {
+   .imgbigsec3 {
+    margin-top: -300vh
+  }
+}
+@media screen and (max-width: 750px) {
+   .textsection2 {
+    margin-top: 200vh
+  }
+}
+@media screen and (max-width: 750px) {
+   .textsection2 img {
+    margin-left: -60vw;
+    margin-top: 15vh;
+  }
+}
+@media screen and (max-width: 750px) {
+   .textsection3 {
+    margin-top: -40vh;
+    width: 90vw;
+    margin-left: -30vw;
+  }
+}
+@media screen and (max-width: 750px) {
+    .imgsex32 img {
+   display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+    .imgsex31 img {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px){
+     .imgsex21 img {
+    display: none;
+}
+}
+@media screen and (max-width: 750px){
+     .imgsex22 img {
+    display: none;
+}
+}
+@media screen and (max-width: 750px){
+     .bb1 h1 {
+    display: none;
+}
+}
+@media screen and (max-width: 1000px){
+     .m1 button {
+   margin-top: -5vh;
+}
+}
+@media screen and (max-width: 1000px){
+     .imgbigsec4 {
+   
+}
+}
+@media screen and (max-width: 1000px){
+     .down4 {
+   margin-top: 100vh;
+}}
+
+.imgsex22 img{
+  margin-top: 17vh;
+  width: 25vw;
+cursor: pointer;
+border-radius: 10px;
+box-shadow:  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.imgsex32 img{
+  margin-top: 17vh;
+  width: 25vw;
+cursor: pointer;
+border-radius: 10px;
+box-shadow:  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.imgsex21 img{
+ 
+  width: 25vw;
+cursor: pointer;
+border-radius: 10px;
+box-shadow:  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.imgsex31 img{
+ margin-top: 2vh;
+  width: 25vw;
+cursor: pointer;
+border-radius: 10px;
+box-shadow:  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++/? */
+.down4{
+  margin-top: 10vh;
+  display: flex;
+}
+ .icontag{
+  margin-top: 45vh;
+  margin-left: -20vw;
+}
+.icontag button{
+  width: 8vw;
+  height: 4vh;
+  margin-top: 2vh;
+  border-radius: 15px;
+  background-color:#cce0ff;
+}
+.one{
+  margin-left: 10vw;
+  margin-top: 5vh;
+}
+.one input{
+ width: 20vw;
+ height: 4vh;
+  margin-top: 4vh;
+}
+.one button{
+  width: 20.2vw;
+  height: 4.4vh;
+  margin-top: 2vh;
+}
+/* @media screen and (max-width: 1000px){
+     .one {
+   margin-top: -60vh;
+   margin-left: -70vw;
+}
+}
+@media screen and (max-width: 1000px){
+     .icontag {
+   margin-top: -37vh;
+   margin-left: -70vw;
+}
+}
+@media screen and (max-width: 1000px){
+     .icontag button{
+   width: 20vw;
+} */
+
+/* @media screen and (max-width: 1000px){
+     .textq1 input {
+   width:80vw ;
+   margin-left: -17vw;
+}
+} */
+@media screen and (max-width: 750px){
+     .one h1 {
+  margin-left: -29vw;
+  margin-top: -70vh;
+}
+}
+@media screen and (max-width: 750px){
+     .imgbigsec4 {
+   margin-top: -210vh;
+}
+}
+@media screen and (max-width: 750px){
+     .textq1 input {
+   margin-left: -50vw;
+   width: 80vw;
+}
+}
+@media screen and (max-width: 750px){
+     .bn1 {
+   margin-left: -20vw;
+   width: 80vw;
+}
+}
+@media screen and (max-width: 750px){
+     .icontag {
+display: none;
+}
+}
+.one{
+  margin-left: 10vw;
+}
+
+.imgbigsec4 {
+  width: 50vw;
+}
+.icontag button:hover{
+  background: transparent;
+}
+.icontag button{
+  border: 1PX solid blueviolet;
+  cursor: pointer;
+}
+.imgsex21:hover{
+  transform: scale(1.02);
+}
+.imgsex22:hover{
+  transform: scale(1.02);
+}
+.imgsex31:hover{
+  transform: scale(1.02);
+}
+.imgsex32:hover{
+  transform: scale(1.02);
+}
+
+/* =======================================================LASTBAAR=============================== */
+.c1a{
+  display: flex;
+}
+.c1b{
+  display: flex;
+}
+.c1a img{
+width: 15px ;
+height: 15px;
+
+}
+.c1b img{
+width: 50px ;
+height: 50px;
+margin: 5px;
+margin-top: 10px;
+
+}
+.endbaar{
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: antiquewhite;
+  width: 100%;
+  
+
+}
+.instgram{
+  display: flex;
+}
+.b3 input{
+  margin-top: 25px;
+  width: 20vw;
+  height: 30px;
+}
+ .endbaar1{
+ width: 10vw; 
+ margin: 70px;
+ color: white;
+
+ }
+ .endbaar1 h1{
+color: rgb(203, 192, 192);
+margin-top: 
+ }
+ .a2 h1{
+ color: rgb(231, 213, 213);
+ }
+ .a2 p{
+ color: rgb(157, 152, 152);
+ }
+ .b1 h1{
+  margin-left: 1vw;
+  margin-top: -2vh;
+  color: rgb(208, 197, 197);
+ }
+ .b1 p{
+  color: rgb(157, 152, 152);
+ }
+ @media screen and (max-width: 750px){
+     .endbaar {
+      margin-top: -45vh;
+      display: flex;
+      flex-direction: column;
+
+}
+}
+@media screen and (max-width: 750px){
+     .endbaar1 {
+      width: 83vw;
+      margin: 25px;
+
+}
+}
+@media screen and (max-width: 750px){
+     .b3 input {
+      width: 300px;
+      
+
+}
+}
+@media screen and (max-width: 750px){
+     .b1 h1 {
+      margin-right: 200px;
+      
+
+}
+}
+.instgram img{
+  width: 14px ;
+  height: 14px;
+  margin: 8px;
+  margin-left: 7px;
+}
+.a6 h1{
+  font-size: 20px;
+}
+
+</style>
+<body>
+<!-- =========================================MAINNAVBAAR=======================================================-->
+    <div class="mainnavbaar">
+  <div class="navbaar">
+  <a href="https://www.blogger.com/about/?bpli=1"> <div class="blooger">BLOOGER</div></a> 
+    <div class="home">
+        <ul>
+           <a href=""><li>HOME</li></a> 
+           <a href=""><li>CATEGORY</li>
+           <a href=""><li>ARCHIVE</li></a> 
+          <a href=""> <li>PAGES</li></a> 
+           <a href=""> <li>CONTACT</li></a>
+        </ul>
+    </div>
+    <div class="cont">
+        <ul>
+           <a href="https://www.instagram.com/abhaypratap616/"> <li><img src="/insta.png" alt=""></li>    </a>
+           <a href="https://www.facebook.com/profile.php?id=100011085932642"> <li><img src="/facebook-.png" alt=""></li></a>
+           <a href="https://twitter.com/home"> <li><img src="/tiwtter.png" alt=""></li>  </a>
+        </ul>
+    </div>
+  </div>
+<div class="baar"><img src="/button/bar icon.png" alt=""></div>
+    </div>
+   
+   
+     <section class="abh">
+        <div class="text">
+            <h3>TOURS & TRAVELS</h3>
+            <h1>AMAZING PLACE ON EARTH</h1>
+           <BUtton class="buttonab">EXPLORE </BUtton>
+        </div>
+     </section>
+
+<section>
+    <div class="abhay">
+    <div class="blogimg">
+        <div class="container">
+            <div class="img1"><img src="/Blog-post/post-1.jpg" alt="post1"></div>
+            <div class="imgtext1">Lorem ipsum dolor sit amemqhdfgdh hqghdfhgd  elit.</div>
+            <div class="b1"><button>Fashion</button></div>
+            <div class="min">2 minutes</div>
+        </div>
+    </div>
+
+    <div class="blogimg">
+        <div class="container">
+            <div class="img1"><img src="/Blog-post/post-3.jpg" alt="post1"></div>
+            <div class="imgtext1">Lorem ipsum dol.dqfhg hdfgf nhghg Esse, ipsam.</div>
+           <div class="b1"><button>Fashion</button></div>
+            <div class="min">5 minutes</div>
+        </div>
+    </div>
+    <div class="blogimg">
+        <div class="container">
+            <div class="img1"><img src="/Blog-post/post-7.jpg" alt="post1"></div>
+            <div class="imgtext1">Lorem ipsum dol.dqfhg hdfgf nghhgg Esse, ipsam.</div>
+           <div class="b1"><button>Fashion</button></div>
+            <div class="min">10 minutes</div>
+        </div>
+    </div>
+    <div class="blogimg">
+        <div class="container">
+            <div class="img1"><img src="/Blog-post/post-5.png" alt="post1"></div>
+            <div class="imgtext1">Lorem ipsum dol.dqfhg hdfgf nghghg Esse, ipsam.</div>
+           <div class="b1"><button>Fashion</button></div>
+            <div class="min">15 minutes</div>
+        </div>
+    </div>
+    
+</div>
+</section>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<section>
+<div class="down1">
+    <div class="imgbigsec">
+        <div class="bigimg"><img src="/Blog-post/blog1.png" alt="blog"></div>
+        <div class="admin"><img src="/admin logo.png" alt="">admin <img src="/calander logo.jpg" alt="">january 24th &nbsp; 2019 &nbsp; 2 comments</div>
+        <div class="m1"><h1>why should boys have all the fun? its the women who are making india an alcohol loving country</h1></div>
+    <div class="m1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla impedit eum cum, id optio deserunt soluta sequi voluptatibus libero quibusdam odit, facere temporibtotam mollitia necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt aspernatur rerum.</p></div>
+    <div class="m1"><button>READ MORE--></button></div>
+    </div>
+        <div class="sof">
+        <div class="b"> <h1>Category</h1></div>
+        <div class="soft">software &nbsp;(05)</div>
+        <div class="soft">technology &nbsp;(08)</div>
+        <div class="soft">Lifestyle &nbsp;(04)</div>
+        <div class="soft">Shopping &nbsp;(02)</div>
+        <div class="soft">food &nbsp;(06)</div>
+        <div class="textsection"><h1 class="h1">Popular post</h1>
+            <div class="imgsex"><img src="/popular-post/m-blog-5.jpg" alt=""></div>
+            
+            <div class="bb"> <h1>why should boys have all the fun?</h1></div>
+            <div class="inputa"><input placeholder="PLEASE ENTER YOUR SUGGESTION RELATIVE THIS POST " type="text"> <BUtton>SUBMIT NOW</BUtton></div>
+
+
+
+
+        </div>
+      </div>
+      
+    </div>
+
+
+    
+
+
+ 
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+ 
+<!-- ??????????????????????????????????????????????????????????? -->
+</div>
+<!-- ///////////////////////////////////////////// -->
+
+</section>
+
+<section>
+  <div class="down2">
+    <div class="imgbigsec2">
+        <div class="bigimg"><img src="/Blog-post/blog2.png" alt="blog"></div>
+        <div class="admin"><img src="/admin logo.png" alt="">admin <img src="/calander logo.jpg" alt="">january 24th &nbsp; 2019 &nbsp; 2 comments</div>
+        <div class="m1"><h1>why should boys have all the fun? its the women who are making india an alcohol loving country</h1></div>
+    <div class="m1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla impedit eum cum, id optio deserunt soluta sequi voluptatibus libero quibusdam odit, facere temporibtotam mollitia necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt aspernatur rerum.</p></div>
+    <div class="m1"><button>READ MORE--></button></div>
+    </div>
+    <div class="textsection2">
+    <div class="imgsex21"><img src="/popular-post/m-blog-1.jpg" alt=""></div>
+            
+    <div class="bb1"> <h1>why should boys have all the fun?</h1></div>
+    <div class="imgsex22"><img src="/popular-post/m-blog-2.jpg" alt=""></div>
+            
+    <div class="bb1"> <h1>why should boys have all the fun?</h1></div>
+  </div>
+</section>
+<section>
+  <div class="down3">
+    <div class="imgbigsec3">
+        <div class="bigimg"><img src="/Blog-post/blog3.png" alt="blog"></div>
+        <div class="admin"><img src="/admin logo.png" alt="">admin <img src="/calander logo.jpg" alt="">january 24th &nbsp; 2019 &nbsp; 2 comments</div>
+        <div class="m1"><h1>why should boys have all the fun? its the women who are making india an alcohol loving country</h1></div>
+    <div class="m1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla impedit eum cum, id optio deserunt soluta sequi voluptatibus libero quibusdam odit, facere temporibtotam mollitia necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt aspernatur rerum.</p></div>
+    <div class="m1"><button>READ MORE--></button></div>
+    </div>
+    <div class="textsection3">
+    <div class="imgsex31"><img src="/popular-post/m-blog-3.jpg" alt=""></div>
+            
+    <div class="bb1"> <h1>why should boys have all the fun?</h1></div>
+    <div class="imgsex32"><img src="/popular-post/m-blog-4.jpg" alt=""></div>
+            
+    <div class="bb1"> <h1>why should boys have all the fun?</h1></div>
+    <!-- <div class="imgsex3"><img src="/Blog-post/post-6.png" alt=""></div>
+            
+    <div class="bb"> <h1>why should boys have all the fun?</h1></div> -->
+  </div>
+</section>
+
+<section>
+  
+    <div class="down4">
+      <div class="imgbigsec4">
+          <div class="bigimg"><img src="/Blog-post/blog4.png" alt="blog"></div>
+          <div class="admin"><img src="/admin logo.png" alt="">admin <img src="/calander logo.jpg" alt="">january 24th &nbsp; 2019 &nbsp; 2 comments</div>
+          <div class="m1"><h1>why should boys have all the fun? its the women who are making india an alcohol loving country</h1></div>
+      <div class="m1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla impedit eum cum, id optio deserunt soluta sequi voluptatibus libero quibusdam odit, facere temporibtotam mollitia necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt aspernatur rerum.</p></div>
+      <div class="m1"><button>READ MORE--></button></div>
+  </div>
+  <div class="one"><H1>NEWSLETTER</H1> 
+    <div class="textq1"><input placeholder="ENTER YOUR EMAIL" type="text"></div>
+    <button class="bn1">SUBCRIBE</button>
+  </div>
+  <div class="icontag">
+    <div class="zz"><h1> popular Tag </h1> </div>
+    <div class="q1"> <button>software</button> <button class="b2">technology</button> <button class="b3">travel</button></div>
+    <div class="q2"> <button>illustration</button> <button class="b2">design</button> <button class="b3">lifestyle</button></div>
+    <div class="q3"> <button>love</button> <button class="b2">project</button> 
+  </div>
+</section>
+  
+</main>
+<div class="endbaar">
+  <div class="endbaar1">
+    <div class="a2"><h1>about us</h1></div>
+    <div class="a2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatum quis eum nesciunt dolorem reprehenderit!</p></div>
+  </div>
+
+  <div class="endbaar1">
+    <div class="a2"><h1>Newsletter</h1></div>
+    <div class="a2"><p>Lorem ipsum dolor sit amet consectetur adipisicing.</p></div>
+    <div class="b3"><input placeholder="Email" type="text"></div>
+  </div>
+
+  <div class="endbaar1">
+        <div class="oneplus"><h1>instagram</h1></div>
+    <div class="c1b">
+      <a href=""><div class="k1"><img src="/instagram/thumb-card3.png" alt=""></div>  </a>
+      <a href=""><div class="k1"><img src="/instagram/thumb-card4.png" alt=""></div></a>
+      <a href=""><div class="k1"><img src="/instagram/thumb-card5.png" alt=""></div></a>
+    </div></a>
+    <div class="c1b">
+      <a href=""> <div class="k1"><img src="/instagram/thumb-card6.png" alt=""></div></a>
+      <a href=""> <div class="k1"><img src="/instagram/thumb-card7.png" alt=""></div></a>
+      <a href=""> <div class="k1"><img src="/instagram/thumb-card8.png" alt=""></div></a>
+    </div>
+  </div>
+
+<div class="endbaar1">
+  <div class="a6"><h1>FOLLOW US</h1></div>
+  <div class="instgram">
+   <a href=""> <div class="facbook"><img src="/insta.png" alt=""></div>  </a>
+    <a href=""> <div class="twi"><img src="/facebook-.png" alt=""></div> </a>
+      <a href=""> <div class="ins"><img src="/tiwtter.png" alt=""></div> </a>
+    
+  </div>
+</div>
+
+</div>
+
+</body>
+<script src="/js/owl.carousel.min.js"></script>
+</html>
+<!-- ===================================MAINNAVBAAR END====================================================== --> 
